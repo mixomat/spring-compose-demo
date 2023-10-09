@@ -23,10 +23,12 @@ For integration testing, the [Spring-Boot Testcontainers](https://docs.spring.io
 
 
 ### Test Endpoints using httpie
+Create a coffee
 ```shell
-# Create a coffee
 http :8080/coffees id=42 flavor=Americano
+```
 
-# Get a coffee
+Get a coffee
+```shell
 http :8080/coffees/42
 ```
